@@ -1,0 +1,3 @@
+[build]
+base = ""
+publish = "dist"  # Adjust to your frontend build folder
