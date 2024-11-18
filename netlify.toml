@@ -3,7 +3,7 @@
   command = "python manage.py collectstatic --noinput && python manage.py migrate"
 
 [[redirects]]
-  from = "/portfolio/templates"
+  from = "/*"
   to = "/home.html"
   status = 200
   force = true
