@@ -1,0 +1,10 @@
+[build]
+  publish = "staticfiles"   # Output directory for Netlify to serve (where static files go)
+  command = "python manage.py collectstatic --noinput && python manage.py migrate"
+
+[[redirects]]
+  from = "/portfolio/templates"
+  to = "/home.html"
+  status = 200
+  force = true
+
