@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-1q_7qilf#0$9ddnqe6c!)3w_rqdi0qr04zs(9_lf-0r7(n5*3x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portfolio',
+    'django_distill',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +125,7 @@ STATICFILES_DIRS = [
     BASE_DIR/'static',
 ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
