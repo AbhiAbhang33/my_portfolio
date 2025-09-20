@@ -233,6 +233,11 @@ h1,h2,h3,h4,h5,h6 {
   z-index: 1;
 }
 
+.ind_project{
+  padding-left: 450px;
+  margin-top: -140px;
+}
+
 #hero .hero-container {
   position: relative;
   z-index: 2;
@@ -284,7 +289,7 @@ h1,h2,h3,h4,h5,h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 5px 0;
   overflow: hidden;
 }
 
@@ -679,7 +684,8 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
+  padding-bottom: 20px;
+  
 }
 
 .contact .info {
@@ -687,6 +693,14 @@ section {
   background: #fff;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 12px;
+  min-width: 1150px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
 }
 
 .contact .info i {
@@ -696,7 +710,7 @@ section {
   width: 44px;
   height: 44px;
   background: #dff3fc;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
